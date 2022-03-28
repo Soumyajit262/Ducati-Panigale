@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24229" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:30 IST">
+    <groups>
+      <group name="endToEndTest">
+        <method signature="CreateContactWithOrganization.createContactWithOrganization()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="createContactWithOrganization" class="com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization"/>
+      </group> <!-- endToEndTest -->
+      <group name="functionalTest">
+        <method signature="CreateContactWithMandatoryFieldsTest.createContactWithMandatoryFields()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="createContactWithMandatoryFields" class="com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest"/>
+      </group> <!-- functionalTest -->
+    </groups>
+    <test name="Test" duration-ms="24229" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:30 IST">
+      <class name="com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="beforeClass" is-config="true" duration-ms="4196" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="beforeMethod" is-config="true" duration-ms="2250" started-at="2022-03-23T17:33:10 IST" finished-at="2022-03-23T17:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createContactWithOrganization()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="createContactWithOrganization" duration-ms="16208" started-at="2022-03-23T17:33:12 IST" finished-at="2022-03-23T17:33:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrganization -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="afterMethod" is-config="true" duration-ms="876" started-at="2022-03-23T17:33:28 IST" finished-at="2022-03-23T17:33:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization@306279ee]" name="afterClass" is-config="true" duration-ms="679" started-at="2022-03-23T17:33:29 IST" finished-at="2022-03-23T17:33:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.crm.autodesk.contactsPOMTest.CreateContactWithOrganization -->
+      <class name="com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="beforeSuite" is-config="true" duration-ms="11" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="beforeClass" is-config="true" duration-ms="4047" started-at="2022-03-23T17:33:05 IST" finished-at="2022-03-23T17:33:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="beforeMethod" is-config="true" duration-ms="2399" started-at="2022-03-23T17:33:10 IST" finished-at="2022-03-23T17:33:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createContactWithMandatoryFields()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="createContactWithMandatoryFields" duration-ms="9597" started-at="2022-03-23T17:33:12 IST" finished-at="2022-03-23T17:33:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithMandatoryFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="afterMethod" is-config="true" duration-ms="983" started-at="2022-03-23T17:33:22 IST" finished-at="2022-03-23T17:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="afterClass" is-config="true" duration-ms="672" started-at="2022-03-23T17:33:23 IST" finished-at="2022-03-23T17:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-03-23T17:33:30 IST" finished-at="2022-03-23T17:33:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest@4d1b0d2a]" name="afterSuite" is-config="true" duration-ms="1" started-at="2022-03-23T17:33:30 IST" finished-at="2022-03-23T17:33:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.crm.autodesk.contactsPOMTest.CreateContactWithMandatoryFieldsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
