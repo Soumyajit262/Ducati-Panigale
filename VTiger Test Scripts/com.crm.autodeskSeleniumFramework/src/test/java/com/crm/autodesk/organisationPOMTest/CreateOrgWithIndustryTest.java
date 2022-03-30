@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.crm.autodesk.commonutility.BaseClass;
 import com.crm.autodesk.commonutility.ExcelDataUtility;
+import com.crm.autodesk.commonutility.IPathConstants;
 import com.crm.autodesk.commonutility.JavaUtility;
 import com.crm.autodesk.commonutility.PropertiesFileUtility;
 import com.crm.autodesk.commonutility.WebDriverUtility;
@@ -80,14 +81,14 @@ public class CreateOrgWithIndustryTest extends BaseClass {
 
 		/* Fill the mandatory fields with industry type as HealthCare */
 		CreateOrganizationspage createOrgPage = new CreateOrganizationspage(driver);
-		createOrgPage.enterOrgName("./src/test/resources/Test Data.xlsx", "Organisation", 1, 0, randomNum);
+		createOrgPage.enterOrgName(IPathConstants.TESTDATA_EXCELFILE_PATH, "Organisation", 1, 0, randomNum);
 		createOrgPage.selectFromDropDown();
 		createOrgPage.clickOnSave();
 
 		/* Validating the organization created successfully or not */
-		String orgName = eLib.getExcelData("./src/test/resources/Test Data.xlsx", "Organisation", 1, 0) + randomNum;
+		String orgName = eLib.getExcelData(IPathConstants.TESTDATA_EXCELFILE_PATH, "Organisation", 1, 0) + randomNum;
 		System.out.println(orgName);
-		String industryType = eLib.getExcelData("./src/test/resources/Test Data.xlsx", "Industry", 17, 0);
+		String industryType = eLib.getExcelData(IPathConstants.TESTDATA_EXCELFILE_PATH, "Industry", 17, 0);
 		System.out.println(industryType);
 
 		OrganizationInformationPage orgInfo = new OrganizationInformationPage(driver);

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.crm.autodesk.commonutility.BaseClass;
 import com.crm.autodesk.commonutility.ExcelDataUtility;
+import com.crm.autodesk.commonutility.IPathConstants;
 import com.crm.autodesk.commonutility.JavaUtility;
 import com.crm.autodesk.commonutility.PropertiesFileUtility;
 import com.crm.autodesk.commonutility.WebDriverUtility;
@@ -76,7 +77,7 @@ public class CreateContactWithMandatoryFieldsTest extends BaseClass {
 		contactPage.clickOnCreateContact();
 
 		/* fill the mandatory filed */
-		String lastName = eLib.getExcelData("./src/test/resources/ContactDetails.xlsx", "Contacts", 2, 1);
+		String lastName = eLib.getExcelData(IPathConstants.CONTACT_EXCELFILE_PATH, "Contacts", 2, 1);
 		CreatingNewContactPage creatingNewContPage = new CreatingNewContactPage(driver);
 		creatingNewContPage.enterLastName("./src/test/resources/ContactDetails.xlsx", "Contacts", 2, 1);
 

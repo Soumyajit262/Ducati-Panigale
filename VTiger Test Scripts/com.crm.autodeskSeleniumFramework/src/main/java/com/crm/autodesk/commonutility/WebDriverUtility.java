@@ -189,7 +189,7 @@ public class WebDriverUtility {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		screenshotName = screenshotName + date;
-		File destination = new File("./com.crm.autodeskSeleniumFramework/Screenshots" + screenshotName + " " + ".png");
+		File destination = new File("./Screenshots/" + screenshotName + " " + ".png");
 		FileUtils.copyFile(source, destination);
 		System.out.println("Screenshot Taken Successfully");
 		return destination.getAbsolutePath();

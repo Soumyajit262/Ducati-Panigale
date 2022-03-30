@@ -55,8 +55,8 @@ public class BaseClass {
 	@BeforeClass(alwaysRun=true)
 	public void beforeClass() throws Throwable
 	{
-		String browser = pLib.getValuesForPropertiesFile("./src/main/resources/commonData/commonCredentials.properties", "browser");
-		String url = pLib.getValuesForPropertiesFile("./src/main/resources/commonData/commonCredentials.properties", "url");	
+		String browser = pLib.getValuesForPropertiesFile(IPathConstants.PROPERTYFILE_PATH, "browser");
+		String url = pLib.getValuesForPropertiesFile(IPathConstants.PROPERTYFILE_PATH, "url");	
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
@@ -88,8 +88,8 @@ public class BaseClass {
 	@BeforeMethod(alwaysRun=true)
 	public void beforeMethod() throws Throwable
 	{
-		String username = pLib.getValuesForPropertiesFile("./src/main/resources/commonData/commonCredentials.properties", "username");
-		String password = pLib.getValuesForPropertiesFile("./src/main/resources/commonData/commonCredentials.properties", "password");
+		String username = pLib.getValuesForPropertiesFile(IPathConstants.PROPERTYFILE_PATH, "username");
+		String password = pLib.getValuesForPropertiesFile(IPathConstants.PROPERTYFILE_PATH, "password");
 		
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.login(username, password);

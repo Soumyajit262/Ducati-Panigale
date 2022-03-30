@@ -8,6 +8,8 @@ import java.sql.Statement;
 
 import com.mysql.cj.jdbc.Driver;
 
+
+
 public class Sample_Mysql_Query_Execution {
 	public static void main(String[] args) throws SQLException {
 		

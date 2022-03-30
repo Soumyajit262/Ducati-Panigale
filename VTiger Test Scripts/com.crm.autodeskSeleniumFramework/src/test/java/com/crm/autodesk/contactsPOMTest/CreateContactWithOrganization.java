@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.crm.autodesk.commonutility.BaseClass;
 import com.crm.autodesk.commonutility.ExcelDataUtility;
+import com.crm.autodesk.commonutility.IPathConstants;
 import com.crm.autodesk.commonutility.JavaUtility;
 import com.crm.autodesk.commonutility.PropertiesFileUtility;
 import com.crm.autodesk.commonutility.WebDriverUtility;
@@ -83,13 +84,13 @@ public class CreateContactWithOrganization extends BaseClass {
 
 		/* Fill the mandatory fields with industry type as HealthCare */
 		CreateOrganizationspage createOrgPage = new CreateOrganizationspage(driver);
-		createOrgPage.enterOrgName("./src/test/resources/Test Data.xlsx", "Organisation", 1, 0, randomNum);
+		createOrgPage.enterOrgName(IPathConstants.TESTDATA_EXCELFILE_PATH, "Organisation", 1, 0, randomNum);
 
 		/* Save the new Organization */
 		createOrgPage.clickOnSave();
 
 		/* Validating the organization created successfully or not */
-		String orgName = eLib.getExcelData("./src/test/resources/Test Data.xlsx", "Organisation", 1, 0) + randomNum;
+		String orgName = eLib.getExcelData(IPathConstants.TESTDATA_EXCELFILE_PATH, "Organisation", 1, 0) + randomNum;
 		// System.out.println(orgName);
 
 		OrganizationInformationPage orgInfo = new OrganizationInformationPage(driver);
@@ -111,9 +112,9 @@ public class CreateContactWithOrganization extends BaseClass {
 		contactPage.clickOnCreateContact();
 
 		/* fill the mandatory filed */
-		String lastName = eLib.getExcelData("./src/test/resources/ContactDetails.xlsx", "Contacts", 2, 1);
+		String lastName = eLib.getExcelData(IPathConstants.CONTACT_EXCELFILE_PATH, "Contacts", 2, 1);
 		CreatingNewContactPage creatingNewContPage = new CreatingNewContactPage(driver);
-		creatingNewContPage.enterLastName("./src/test/resources/ContactDetails.xlsx", "Contacts", 2, 1);
+		creatingNewContPage.enterLastName(IPathConstants.CONTACT_EXCELFILE_PATH, "Contacts", 2, 1);
 
 		/* Choose the desired the organization */
 		creatingNewContPage.chooseOrg(driver, orgName);

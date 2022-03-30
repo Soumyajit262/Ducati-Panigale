@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.crm.autodesk.commonutility.BaseClass;
 import com.crm.autodesk.commonutility.ExcelDataUtility;
+import com.crm.autodesk.commonutility.IPathConstants;
 import com.crm.autodesk.commonutility.JavaUtility;
 import com.crm.autodesk.commonutility.PropertiesFileUtility;
 import com.crm.autodesk.commonutility.WebDriverUtility;
@@ -30,7 +31,7 @@ public class CreateCampaignWithMandatoryFieldsTest extends BaseClass {
 	
 	
 	@Test(groups="functionalTest")
-	public void createOrgWithMandatoryFields() throws Throwable {
+	public void createWithMandatoryFields() throws Throwable {
 		/*
 		 * WebDriver driver =null;
 		 * 
@@ -81,7 +82,7 @@ public class CreateCampaignWithMandatoryFieldsTest extends BaseClass {
 		campPage.clickOnCreateCampaignIcon();
 
 		/* Enter the campaign name */
-		String campaignName = eLib.getExcelData("./src/test/resources/Campaigns.xlsx", "Campaigns", 1, 0);
+		String campaignName = eLib.getExcelData(IPathConstants.CAMPAIGN_EXCELFILE_PATH, "Campaigns", 1, 0);
 		campaignName = campaignName + randomNum;
 
 		CreateNewCampaignPage createCampaign = new CreateNewCampaignPage(driver);

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.crm.autodesk.commonutility.BaseClass;
 import com.crm.autodesk.commonutility.ExcelDataUtility;
+import com.crm.autodesk.commonutility.IPathConstants;
 import com.crm.autodesk.commonutility.JavaUtility;
 import com.crm.autodesk.commonutility.PropertiesFileUtility;
 import com.crm.autodesk.commonutility.WebDriverUtility;
@@ -80,7 +81,7 @@ public class CreateCampaignWithProductTest extends BaseClass {
 		/* Enter the mandatory details */
 		int randomNum = jLib.getRandomNum();
 		CreateNewProductPage createProductPage = new CreateNewProductPage(driver);
-		String productName = eLib.getExcelData("./src/test/resources/ProductNames.xlsx", "Products", 1, 0);
+		String productName = eLib.getExcelData(IPathConstants.PRODUCT_EXCELFILE_PATH, "Products", 1, 0);
 		productName = productName + randomNum;
 		createProductPage.enterProductName(productName);
 
@@ -110,7 +111,7 @@ public class CreateCampaignWithProductTest extends BaseClass {
 		campPage.clickOnCreateCampaignIcon();
 
 		/* Enter the campaign name */
-		String campaignName = eLib.getExcelData("./src/test/resources/Campaigns.xlsx", "Campaigns", 1, 0);
+		String campaignName = eLib.getExcelData(IPathConstants.CAMPAIGN_EXCELFILE_PATH, "Campaigns", 1, 0);
 		campaignName = campaignName + randomNum;
 
 		CreateNewCampaignPage createCampaign = new CreateNewCampaignPage(driver);
@@ -124,6 +125,8 @@ public class CreateCampaignWithProductTest extends BaseClass {
 
 		/* Validation of campaign name */
 		CampaignInformationPage campaignInfoPage = new CampaignInformationPage(driver);
+		
+		Assert.fail();
 		
 		Assert.assertEquals(campaignName, campaignInfoPage.getCampaignName());
 		
